@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/windows
+FROM rancher/windows_exporter-package:v0.0.3
 RUN Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
 RUN Expand-Archive ngrok.zip
 RUN ngrok\ngrok.exe authtoken 2B4njimEAzmZRQ88xRbrcjFXLjT_3511Ty5FRySHPnt2cwJrM
